@@ -17,19 +17,21 @@ body {
         color: white;
         margin: 0px;
         padding: 0px;
-        background: url('https://images.unsplash.com/photo-1610962381137-50ef93055125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+        background: url('https://images.unsplash.com/photo-1589987637306-05ee56dab871?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NTd8MTkwNzI4fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
         background-size: cover;
+        background-position: center center;
     }
      
     
      .list {
         background-color:black;
         margin-top: 0px;
-        display: block;
-        border-radius: 35px;
-        width: 96%;
+        display: flex;
+        
+        padding: 0px;
+        width: 106%;
        
-        margin-left: 40px;
+       
         
     }
  .navbar {
@@ -39,7 +41,7 @@ body {
     .navbar li {
        
         display: inline-block;
-        font-size: 33px;
+        font-size: 28px;
     }
 
     .navbar li a {
@@ -58,20 +60,22 @@ body {
     }
     .btn { 
          font-family: 'Ephesis', cursive;
-        margin:0, 9px;
+        ;
         background-color: black;
         color: white;
         padding: 4px 14px;
         border: 2px solid grey;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 18px;
         cursor: pointer;
+       
     }
 
     .btn:hover {
         background-color: rgb(31, 30, 30);
     }
     .container {
+       
         text-align: center;
         border: 2px solid white;
         margin: 76px 80px;
@@ -79,14 +83,14 @@ body {
         width: 23%;
         border-radius: 20px;
         margin-left: 450px;
-        background-color: rgba(0, 0, 0, 0.397);
+        
 
 
     }
     
     label{
         font-size: 30px;
-        color:white;
+        color:black;
         font-weight:bold;
     }
     button{font-size: 20px;
@@ -100,7 +104,7 @@ p{
 }
 .hi{
     float: right;
-    margin-left: 300px;
+    margin-left: 505px;
 }
 h1{
     color:white;
@@ -158,6 +162,7 @@ h1{
     background-color: black;
 }
 .content{
+
     color: white;
     font-size:25px;
    
@@ -181,6 +186,7 @@ h1{
    
 }
 .footer{
+   
     display:flex;
     flex-direction: row;
    width: 100%;
@@ -188,7 +194,25 @@ h1{
    color: black;
    text-align: center;
 }
-  
+
+
+
+
+
+@media ( max-width:1099px){
+  .body {
+    background-position: center right;
+  }
+    
+}
+@media ( max-width:800px){
+.container {
+        margin-left: 300px;
+        margin-top: 10px;
+        width: 30%;
+     
+    }
+}
     
 </style>
 </head>
@@ -201,13 +225,16 @@ h1{
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Team</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <div class="hi">
+                <div class="hi"> <button class="btn">Call Us Now</button>
+                    <button class="btn">Email Us</button></div>
 
-                    <button class="btn">Call Us Now</button>
-                    <button class="btn">Email Us</button>
-                </div>
+                   
+                
             </ul>
-    </div>
+        
+        </div>
+        
+        
         
         <div class="container">
             <center>
@@ -227,7 +254,9 @@ h1{
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
               </label>
             
-            
+              
+              
+          
               <div >
                 <button type="button" class="cancelbtn"  >Cancel</button>
                 <button type="submit" class="signupbtn"
@@ -258,7 +287,15 @@ h1{
                 <a href="#" >News</a><br>
                
         </div>
-      
+       
+          
+
+
+
+
+
+
+
 </body>
 
 </html>
